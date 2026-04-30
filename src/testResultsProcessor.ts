@@ -1,5 +1,4 @@
-import { writeFileSync } from "fs";
-import { mkdirp } from "mkdirp";
+import { mkdirSync, writeFileSync } from "fs";
 import path from "path";
 
 import { defaultOutputFile, defaultUserName } from "./constants.js";
@@ -17,7 +16,7 @@ const processor = (
   const trx = generateTrx(testModules, options);
 
   const targetDir = path.dirname(path.resolve(options.outputFile));
-  mkdirp.sync(targetDir);
+  mkdirSync(targetDir, { recursive: true });
 
   writeFileSync(options.outputFile, trx, { encoding: "utf8" });
   process.stdout.write("DONE\n");
