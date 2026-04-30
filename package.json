@@ -1,18 +1,17 @@
 {
-  "name": "vitest-trx-results-processor",
+  "name": "@reedpatterson/vitest-trx-results-processor",
   "description": "Vitest results processor for exporting into TRX files for Visual Studio",
-  "author": "Christian Wissmach",
-  "user": "christian-wissmach",
+  "author": "Reed Patterson",
   "version": "0.0.0-semantic-release",
   "license": "MIT",
   "exports": "./dist/index.js",
   "type": "module",
   "repository": {
-    "url": "https://github.com/christian-wissmach/vitest-trx-results-processor",
+    "url": "https://github.com/reedpatterson/vitest-trx-results-processor",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/christian-wissmach/vitest-trx-results-processor/issues"
+    "url": "https://github.com/reedpatterson/vitest-trx-results-processor/issues"
   },
   "keywords": [
     "vitest",
@@ -28,13 +27,12 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "uuid": "^8.0.0",
+    "uuid": "^14.0.0",
     "xmlbuilder": "^15.1.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.12",
     "@types/mkdirp": "^1.0.0",
-    "@types/uuid": "^8.0.0",
     "@types/xml2js": "^0.4.2",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
     "@typescript-eslint/parser": "^8.23.0",
